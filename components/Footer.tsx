@@ -94,12 +94,12 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Provozní doba</h3>
             <div className="text-gray-400 text-sm space-y-2">
               <div className="flex justify-between">
-                <span>Po - Pá:</span>
-                <span className="font-medium text-white">8:00 - 17:00</span>
+                <span>So:</span>
+                <span className="font-medium text-white">9:00 - 17:00</span>
               </div>
-              <div className="flex justify-between">
-                <span>So - Ne:</span>
-                <span className="font-medium">Zavřeno</span>
+              <div className="flex justify-between items-start">
+                <span>Po - Pá:</span>
+                <span className="font-medium text-accent text-xs text-right">od ledna 2026</span>
               </div>
               <div className="mt-4 pt-4 border-t border-gray-800">
                 <p className="text-xs">

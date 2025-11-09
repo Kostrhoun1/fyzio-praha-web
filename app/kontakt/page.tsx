@@ -111,18 +111,18 @@ export default function ContactPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <div>
+                    <div className="w-full">
                       <div className="font-semibold text-gray-900 mb-2">Provozní doba</div>
-                      <div className="space-y-1">
-                        <div className="flex justify-between text-gray-600">
-                          <span>Pondělí - Pátek:</span>
-                          <span className="font-semibold text-gray-900">8:00 - 17:00</span>
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center text-gray-600">
+                          <span>So:</span>
+                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
                         </div>
-                        <div className="flex justify-between text-gray-600">
-                          <span>Sobota - Neděle:</span>
-                          <span className="font-semibold">Zavřeno</span>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Po - Pá:</span>
+                          <span className="font-semibold text-accent text-sm">od ledna 2026</span>
                         </div>
-                        <div className="text-sm text-accent mt-2">
+                        <div className="text-sm text-accent mt-3 pt-3 border-t border-gray-200">
                           ● Na objednávku
                         </div>
                       </div>
