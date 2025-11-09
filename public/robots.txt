@@ -1,0 +1,6 @@
+# robots.txt for Fyzio Praha
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://fyzio-praha.cz/sitemap.xml
