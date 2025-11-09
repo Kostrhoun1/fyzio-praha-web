@@ -95,7 +95,7 @@ export default function Footer() {
             <div className="text-gray-400 text-sm space-y-2">
               <div className="flex justify-between">
                 <span>So:</span>
-                <span className="font-medium text-white">9:00 - 17:00</span>
+                <span className="font-medium text-white">9:00 - 12:00</span>
               </div>
               <div className="flex justify-between items-start">
                 <span>Po - Pá:</span>
