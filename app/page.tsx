@@ -395,9 +395,10 @@ export default function HomePage() {
                     </svg>
                     <span className="font-semibold">Provozní doba</span>
                   </div>
-                  <p className="text-white/90">
-                    Po - Pá: 8:00 - 17:00<br />
-                    Na objednávku
+                  <p className="text-white/90 text-sm">
+                    Po, St, Pá: 9:00 - 17:00<br />
+                    Út, Čt: 12:00 - 20:00<br />
+                    So: 9:00 - 12:00
                   </p>
                 </div>
               </div>
