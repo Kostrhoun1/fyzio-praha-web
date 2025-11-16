@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Služby - Fyzioterapie a rehabilitace | Fyzio Praha',
-  description: 'Komplexní fyzioterapeutické služby: dětská fyzioterapie, bolesti pohybového aparátu, pooperační rehabilitace, tejpování a více. Praha 8.',
+  description: 'Fyzioterapie Praha 8 ✓ Bolesti zad a páteře, rehabilitace po úrazech, dětská fyzio od 6 let, podologie ✓ Individuální péče 45-60 min ✓ Palmovka ☎ 604 477 935',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/sluzby',
   },

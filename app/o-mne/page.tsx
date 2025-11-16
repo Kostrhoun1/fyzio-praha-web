@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'O mně - Bc. Veronika Jansová | Fyzio Praha',
-  description: 'Registrovaný fyzioterapeut s více než 15 lety praxe. Specializuji se na individuální přístup a komplexní péči v oblasti fyzioterapie.',
+  description: 'Bc. Veronika Jansová - fyzioterapeutka Praha 8 s 15+ lety praxe ✓ Bolesti zad, vertebrogenní obtíže, dětská fyzio, podologie ✓ 20+ certifikací ✓ U metra Palmovka',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/o-mne',
   },

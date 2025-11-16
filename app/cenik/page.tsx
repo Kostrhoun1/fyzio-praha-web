@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ceník - Ceny fyzioterapie | Fyzio Praha',
-  description: 'Transparentní ceník fyzioterapeutických služeb. Terapie 30, 45 nebo 60 minut. Platba hotově, kartou nebo QR kódem. Praha 8.',
+  description: 'Ceník fyzioterapie Praha 8 ✓ 30 min: 750 Kč, 45 min: 1000 Kč, 60 min: 1300 Kč ✓ Kompletní vyšetření + terapie + edukace ✓ Platba kartou i hotově ☎ 604 477 935',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/cenik',
   },

@@ -13,19 +13,18 @@ export default function HomePage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="inline-block">
                 <span className="bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold">
-                  Profesionální fyzioterapie v Praze 8
+                  Fyzioterapie Praha 8 - Libeň
                 </span>
               </div>
 
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                Fyzioterapie na míru v Praze 8<br />
-                <span className="text-primary">7 minut od metra Palmovka</span>
+                Fyzioterapie na míru v Praze 8
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-                Fyzioterapie s úsměvem<br />
+                U metra Palmovka<br />
                 <span className="font-semibold text-gray-800">
-                  Individuální, cílený a odborný přístup
+                  Individuální péče s 15+ lety zkušeností
                 </span>
               </p>
 
