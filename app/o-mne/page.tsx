@@ -134,7 +134,7 @@ export default function AboutPage() {
                 Specializace a certifikace
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Neustále se vzděláváv ám a rozšiřuji své dovednosti, abych vám mohla nabídnout
+                Neustále se vzdělávám a rozšiřuji své dovednosti, abych vám mohla nabídnout
                 tu nejlepší péči založenou na aktuálních poznatcích fyzioterapie
               </p>
             </div>
