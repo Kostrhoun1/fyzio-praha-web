@@ -3,9 +3,9 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Fyzio Praha - Bc. Veronika Jansová",
-    "image": "https://fyzio-praha.cz/images/logo-transparent.png",
-    "@id": "https://fyzio-praha.cz",
-    "url": "https://fyzio-praha.cz",
+    "image": "https://www.fyzio-praha.cz/images/logo-transparent.png",
+    "@id": "https://www.fyzio-praha.cz",
+    "url": "https://www.fyzio-praha.cz",
     "telephone": "+420604477935",
     "email": "info@fyzio-praha.cz",
     "address": {

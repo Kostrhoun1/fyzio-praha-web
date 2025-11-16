@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 
+// Sitemap updated 2025-11-16 - Canonical URL fix - All URLs now use www variant
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://fyzio-praha.cz'
+  const baseUrl = 'https://www.fyzio-praha.cz'
   const lastModified = new Date()
 
   return [

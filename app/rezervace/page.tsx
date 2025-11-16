@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Online rezervace - Fyzio Praha',
   description: 'Rezervujte si termín online. Jednoduchý a rychlý systém rezervací fyzioterapie v Praze 8.',
   alternates: {
-    canonical: 'https://fyzio-praha.cz/rezervace',
+    canonical: 'https://www.fyzio-praha.cz/rezervace',
   },
 };
 

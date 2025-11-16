@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Kontakt - Fyzioterapie Praha 8 Libeň | Fyzio Praha',
   description: 'Kontaktujte nás: tel. 604 477 935, email info@fyzio-praha.cz. Ordinace v Praze 8 - Libeň, Andrštova 1339/4. Po-Pá 8:00-17:00.',
   alternates: {
-    canonical: 'https://fyzio-praha.cz/kontakt',
+    canonical: 'https://www.fyzio-praha.cz/kontakt',
   },
 };
 
