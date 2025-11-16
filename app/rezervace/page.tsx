@@ -53,24 +53,6 @@ export default function ReservationPage() {
                   <p className="text-gray-600 max-w-2xl">
                     Klikněte na tlačítko níže a vyberte si volný termín
                   </p>
-
-                  {/* Důležité upozornění */}
-                  <div className="inline-block bg-blue-50 border-2 border-blue-200 rounded-xl px-6 py-3 mt-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="text-2xl flex-shrink-0">🎉</div>
-                      <div className="text-left">
-                        <p className="text-sm font-bold text-blue-900 mb-1">
-                          Novinky v roce 2026!
-                        </p>
-                        <p className="text-xs text-blue-800 leading-relaxed">
-                          Od ledna 2026 spouštím plný provoz Pondělí - Pátek
-                        </p>
-                        <p className="text-xs text-blue-700 mt-1">
-                          Do té doby vás ráda přivítám každou sobotu
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <ReservantoWidget />
               </div>

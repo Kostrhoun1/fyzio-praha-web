@@ -63,7 +63,7 @@ export default function ContactPage() {
                       <a href="tel:+420604477935" className="text-primary hover:text-primary-light text-lg font-semibold transition-colors">
                         604 477 935
                       </a>
-                      <div className="text-sm text-gray-500 mt-1">Po-Pá 8:00 - 17:00</div>
+                      <div className="text-sm text-gray-500 mt-1">Po-So: 9:00 - 20:00</div>
                     </div>
                   </div>
 
@@ -116,17 +116,34 @@ export default function ContactPage() {
                     </div>
                     <div className="w-full">
                       <div className="font-semibold text-gray-900 mb-2">Provozní doba</div>
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-center text-gray-600">
-                          <span>So:</span>
-                          <span className="font-semibold text-gray-900">9:00 - 12:00</span>
+                      <div className="space-y-1 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Po:</span>
+                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
                         </div>
                         <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Po - Pá:</span>
-                          <span className="font-semibold text-accent text-sm">od ledna 2026</span>
+                          <span className="text-gray-600">Út:</span>
+                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
                         </div>
-                        <div className="text-sm text-accent mt-3 pt-3 border-t border-gray-200">
-                          ● Na objednávku
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">St:</span>
+                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Čt:</span>
+                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Pá:</span>
+                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">So:</span>
+                          <span className="font-semibold text-accent">9:00 - 12:00</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Ne:</span>
+                          <span className="text-gray-400">Zavřeno</span>
                         </div>
                       </div>
                     </div>
