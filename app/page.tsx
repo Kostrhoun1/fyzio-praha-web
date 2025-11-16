@@ -18,8 +18,8 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                Fyzioterapie na míru,<br />
-                <span className="text-primary">která sedne</span>
+                Fyzioterapie na míru v Praze 8<br />
+                <span className="text-primary">7 minut od metra Palmovka</span>
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
@@ -280,6 +280,73 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <TestimonialsCarousel />
+
+      {/* Local SEO Section - Ordinace v Praze 8 */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+              {/* Text Content */}
+              <div>
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Ordinace fyzioterapie v Praze 8 - Libeň
+                </h2>
+                <div className="prose prose-lg text-gray-600 space-y-4">
+                  <p>
+                    Moje ordinace se nachází v <strong>Praze 8 - Libeň</strong>, pouhých{' '}
+                    <strong>7 minut chůze od metra Palmovka</strong>. Díky výborné dostupnosti
+                    veřejnou dopravou i autem je fyzioterapie dostupná pro obyvatele celé Prahy 8.
+                  </p>
+                  <p>
+                    Ordinace je umístěna v přízemí na adrese <strong>Andrštova 1339/4</strong>,
+                    což zajišťuje bezbariérový přístup pro všechny pacienty. Parkování je možné
+                    přímo v ulici nebo na nedalekém parkovišti u Palmovky.
+                  </p>
+                  <p>
+                    Pokud hledáte <strong>kvalitní fyzioterapii v Praze 8</strong> s individuálním
+                    přístupem, jste na správném místě.
+                  </p>
+                </div>
+
+                {/* Quick Facts */}
+                <div className="grid grid-cols-2 gap-4 mt-8">
+                  <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
+                    <div className="text-primary font-bold mb-1">📍 Lokalita</div>
+                    <div className="text-gray-700">Praha 8 - Libeň</div>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
+                    <div className="text-primary font-bold mb-1">🚇 Metro</div>
+                    <div className="text-gray-700">Palmovka (7 min)</div>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
+                    <div className="text-primary font-bold mb-1">🅿️ Parkování</div>
+                    <div className="text-gray-700">V ulici zdarma</div>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
+                    <div className="text-primary font-bold mb-1">♿ Přístup</div>
+                    <div className="text-gray-700">Bezbariérový</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Google Map */}
+              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.945!2d14.4568!3d50.1056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94bb54c3e1c5%3A0x8e8e8e8e8e8e8e8e!2sAndr%C5%A1tova%201339%2F4%2C%20180%2000%20Praha%208-Libe%C5%88!5e0!3m2!1scs!2scz!4v1234567890123!5m2!1scs!2scz"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mapa ordinace Fyzio Praha - Andrštova 1339/4, Praha 8 - Libeň"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gray-50">
