@@ -92,19 +92,34 @@ export default function Footer() {
           {/* Opening Hours */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Provozní doba</h3>
-            <div className="text-gray-400 text-sm space-y-2">
+            <div className="text-gray-400 text-sm space-y-1">
+              <div className="flex justify-between">
+                <span>Po:</span>
+                <span className="font-medium text-white">9:00 - 17:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Út:</span>
+                <span className="font-medium text-white">12:00 - 20:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span>St:</span>
+                <span className="font-medium text-white">9:00 - 17:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Čt:</span>
+                <span className="font-medium text-white">12:00 - 20:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Pá:</span>
+                <span className="font-medium text-white">9:00 - 17:00</span>
+              </div>
               <div className="flex justify-between">
                 <span>So:</span>
-                <span className="font-medium text-white">9:00 - 12:00</span>
+                <span className="font-medium text-accent">9:00 - 12:00</span>
               </div>
-              <div className="flex justify-between items-start">
-                <span>Po - Pá:</span>
-                <span className="font-medium text-accent text-xs text-right">od ledna 2026</span>
-              </div>
-              <div className="mt-4 pt-4 border-t border-gray-800">
-                <p className="text-xs">
-                  <span className="text-accent">●</span> Na objednávku
-                </p>
+              <div className="flex justify-between">
+                <span>Ne:</span>
+                <span className="text-gray-600">Zavřeno</span>
               </div>
             </div>
           </div>
