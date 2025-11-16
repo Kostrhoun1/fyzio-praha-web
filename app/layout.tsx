@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://fyzio-praha.cz'),
   title: "Fyzio Praha - Bc. Veronika Jansová | Fyzioterapie na míru",
   description: "Profesionální fyzioterapie v Praze 8. Individuální, cílený a odborný přístup. Specializace na dětskou fyzioterapii, bolesti pohybového aparátu, rehabilitace a více.",
   keywords: "fyzioterapie Praha, rehabilitace Praha, fyzioterapeut, dětská fyzioterapie, bolesti zad, vertebrogenní obtíže, Praha 8 Libeň",
@@ -25,10 +26,13 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
+  alternates: {
+    canonical: 'https://fyzio-praha.cz',
+  },
   openGraph: {
     title: "Fyzio Praha - Profesionální fyzioterapie",
     description: "Fyzioterapie na míru s individuálním přístupem v Praze 8",
-    url: "https://www.fyzio-praha.cz",
+    url: "https://fyzio-praha.cz",
     siteName: "Fyzio Praha",
     locale: "cs_CZ",
     type: "website",
@@ -44,6 +48,7 @@ export default function RootLayout({
     <html lang="cs">
       <head>
         <StructuredData />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

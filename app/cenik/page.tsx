@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Ceník - Ceny fyzioterapie | Fyzio Praha',
   description: 'Transparentní ceník fyzioterapeutických služeb. Terapie 30, 45 nebo 60 minut. Platba hotově, kartou nebo QR kódem. Praha 8.',
+  alternates: {
+    canonical: 'https://fyzio-praha.cz/cenik',
+  },
 };
 
 export default function PricingPage() {

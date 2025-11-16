@@ -5,6 +5,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Služby - Fyzioterapie a rehabilitace | Fyzio Praha',
   description: 'Komplexní fyzioterapeutické služby: dětská fyzioterapie, bolesti pohybového aparátu, pooperační rehabilitace, tejpování a více. Praha 8.',
+  alternates: {
+    canonical: 'https://fyzio-praha.cz/sluzby',
+  },
 };
 
 export default function ServicesPage() {
