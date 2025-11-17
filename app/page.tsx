@@ -295,7 +295,7 @@ export default function HomePage() {
                   <p>
                     Moje ordinace se nachází v <strong>Praze 8 - Libeň</strong>, pouhých{' '}
                     <strong>7 minut chůze od metra Palmovka</strong>. Díky výborné dostupnosti
-                    veřejnou dopravou i autem je fyzioterapie dostupná pro obyvatele celé Prahy 8.
+                    veřejnou dopravou i autem je fyzioterapie snadno dostupná nejen pro obyvatele Prahy 8, ale i ostatních pražských čtvrtí.
                   </p>
                   <p>
                     Ordinace je umístěna v přízemí na adrese <strong>Andrštova 1339/4</strong>,
@@ -320,7 +320,7 @@ export default function HomePage() {
                   </div>
                   <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
                     <div className="text-primary font-bold mb-1">🅿️ Parkování</div>
-                    <div className="text-gray-700">V ulici zdarma</div>
+                    <div className="text-gray-700">Modré a fialové zóny</div>
                   </div>
                   <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary/20">
                     <div className="text-primary font-bold mb-1">♿ Přístup</div>

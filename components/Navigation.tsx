@@ -22,7 +22,7 @@ export default function Navigation() {
     { href: '/o-mne', label: 'O mně' },
     { href: '/sluzby', label: 'Služby' },
     { href: '/cenik', label: 'Ceník' },
-    { href: '/caste-otazky', label: 'FAQ' },
+    { href: '/caste-otazky', label: 'Časté otázky' },
     { href: '/rezervace', label: 'Rezervace' },
     { href: '/kontakt', label: 'Kontakt' },
   ];

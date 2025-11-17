@@ -181,12 +181,13 @@ const faqData = [
       <p class="mb-2"><strong>🅿️ MOŽNOSTI:</strong></p>
       <ol class="list-decimal pl-6 space-y-2 mb-4">
         <li>Ulice Andrštova (přímo před ordinací) - modré zóny</li>
+        <li><strong>Fialové zóny v ulicích:</strong> náměstí Dr. Václava Holého, U Libeňského pivovaru, Na Rokytce, Pivovarnická</li>
         <li>Okolní ulice (Čimická, Zenklova) - zdarma nebo modré zóny</li>
         <li>Parkoviště Palmovka - 5 minut chůze</li>
       </ol>
       <p class="mb-2"><strong>🚇 VEŘEJNÁ DOPRAVA:</strong></p>
       <ul class="list-disc pl-6 space-y-2">
-        <li>Metro C - Palmovka (7 minut chůze)</li>
+        <li>Metro B - Palmovka (7 minut chůze)</li>
         <li>Tram 1, 3, 10, 24, 25 - zastávka Palmovka</li>
         <li>Autobus 140, 156, 177, 186 - zastávka Palmovka</li>
       </ul>
