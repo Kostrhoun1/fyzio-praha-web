@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://fyzio-praha.cz/sitemap.xml
+Sitemap: https://www.fyzio-praha.cz/sitemap.xml
