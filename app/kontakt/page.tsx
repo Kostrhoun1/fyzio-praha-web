@@ -119,11 +119,11 @@ export default function ContactPage() {
                       <div className="space-y-1 text-sm">
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Po:</span>
-                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Út:</span>
-                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
+                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">St:</span>

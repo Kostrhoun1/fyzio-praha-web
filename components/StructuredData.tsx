@@ -28,7 +28,7 @@ export default function StructuredData() {
         "closes": "12:00"
       }
     ],
-    "priceRange": "800 Kč - 1200 Kč",
+    "priceRange": "750 Kč - 1000 Kč",
     "medicalSpecialty": "Physiotherapy",
     "sameAs": []
   };

@@ -117,18 +117,14 @@ const faqData = [
   {
     question: "Kolik stojí jedna návštěva u fyzioterapeuta?",
     answer: `
-      <p class="mb-4">Nabízím tři délky terapie podle vašich potřeb:</p>
+      <p class="mb-4">Nabízím dvě délky terapie podle vašich potřeb:</p>
       <div class="space-y-4">
         <div class="bg-gray-50 p-4 rounded-xl">
           <div class="font-bold text-gray-900 mb-1">⏱️ 30 minut = 750 Kč</div>
           <div class="text-gray-600">Ideální pro: kontrolní vyšetření, tejpování, cílená terapie</div>
         </div>
-        <div class="bg-gray-50 p-4 rounded-xl">
-          <div class="font-bold text-gray-900 mb-1">⏱️ 45 minut = 1000 Kč</div>
-          <div class="text-gray-600">Ideální pro: standardní terapie, kombinace technik</div>
-        </div>
-        <div class="bg-primary/10 p-4 rounded-xl border-2 border-primary">
-          <div class="font-bold text-gray-900 mb-1">⏱️ 60 minut = 1300 Kč ⭐ NEJOBLÍBENĚJŠÍ</div>
+        <div class="bg-accent/10 p-4 rounded-xl border-2 border-accent">
+          <div class="font-bold text-gray-900 mb-1">⏱️ 60 minut = <span class="line-through text-gray-400">1300 Kč</span> <span class="text-accent">1000 Kč</span> 🎉 ZAVÁDĚCÍ CENA</div>
           <div class="text-gray-600">Ideální pro: kompletní vyšetření + terapie, nové obtíže</div>
         </div>
       </div>
@@ -288,8 +284,8 @@ const faqData = [
       <p class="mb-4">Ano, ordinuji v sobotu od 9:00 do 12:00.</p>
       <p class="mb-2"><strong>📅 OTEVÍRACÍ HODINY:</strong></p>
       <div class="bg-gray-50 p-4 rounded-xl space-y-1">
-        <div>Pondělí: 9:00 - 17:00</div>
-        <div>Úterý: 12:00 - 20:00</div>
+        <div>Pondělí: 12:00 - 20:00</div>
+        <div>Úterý: 9:00 - 17:00</div>
         <div>Středa: 9:00 - 17:00</div>
         <div>Čtvrtek: 12:00 - 20:00</div>
         <div>Pátek: 9:00 - 17:00</div>

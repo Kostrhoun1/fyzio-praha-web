@@ -204,7 +204,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {pricing.map((plan, index) => (
               <div
                 key={index}
@@ -217,7 +217,7 @@ export default function HomePage() {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-accent text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg">
-                      ⭐ Nejvýhodnější
+                      🎉 Zaváděcí cena
                     </div>
                   </div>
                 )}
@@ -227,10 +227,20 @@ export default function HomePage() {
                     {plan.duration}
                     <span className="text-2xl text-gray-500"> min</span>
                   </div>
-                  <div className="text-4xl lg:text-5xl font-bold text-primary mt-4">
+                  {plan.originalPrice && (
+                    <div className="text-xl text-gray-400 line-through mt-2">
+                      {plan.originalPrice} Kč
+                    </div>
+                  )}
+                  <div className={`text-4xl lg:text-5xl font-bold mt-2 ${plan.originalPrice ? 'text-accent' : 'text-primary'}`}>
                     {plan.price}
                     <span className="text-xl text-gray-500"> Kč</span>
                   </div>
+                  {plan.originalPrice && (
+                    <div className="text-sm text-accent font-semibold mt-2">
+                      Mimořádná zaváděcí cena!
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-4 mb-8">
@@ -395,8 +405,8 @@ export default function HomePage() {
                     <span className="font-semibold">Provozní doba</span>
                   </div>
                   <p className="text-white/90 text-sm">
-                    Po, St, Pá: 9:00 - 17:00<br />
-                    Út, Čt: 12:00 - 20:00<br />
+                    Po, Čt: 12:00 - 20:00<br />
+                    Út, St, Pá: 9:00 - 17:00<br />
                     So: 9:00 - 12:00
                   </p>
                 </div>
@@ -474,18 +484,9 @@ const pricing = [
     ],
   },
   {
-    duration: '45',
-    price: '1000',
-    popular: false,
-    features: [
-      'Komplexní terapie',
-      'Kombinace technik',
-      'Edukace a cviky',
-    ],
-  },
-  {
     duration: '60',
-    price: '1300',
+    price: '1000',
+    originalPrice: '1300',
     popular: true,
     features: [
       'První návštěva',

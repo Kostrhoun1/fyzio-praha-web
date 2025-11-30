@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ceník - Ceny fyzioterapie | Fyzio Praha',
-  description: 'Ceník fyzioterapie Praha 8 ✓ 30 min: 750 Kč, 45 min: 1000 Kč, 60 min: 1300 Kč ✓ Kompletní vyšetření + terapie + edukace ✓ Platba kartou i hotově ☎ 604 477 935',
+  description: 'Ceník fyzioterapie Praha 8 ✓ 30 min: 750 Kč, 60 min: 1000 Kč (zaváděcí cena!) ✓ Kompletní vyšetření + terapie + edukace ✓ Platba kartou i hotově ☎ 604 477 935',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/cenik',
   },
@@ -29,7 +29,7 @@ export default function PricingPage() {
       {/* Pricing Cards */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {pricing.map((plan, index) => (
               <div
                 key={index}
@@ -42,7 +42,7 @@ export default function PricingPage() {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-accent text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg">
-                      ⭐ Nejvýhodnější
+                      🎉 Zaváděcí cena
                     </div>
                   </div>
                 )}
@@ -52,10 +52,20 @@ export default function PricingPage() {
                     {plan.duration}
                     <span className="text-2xl text-gray-500"> min</span>
                   </div>
-                  <div className="text-4xl lg:text-5xl font-bold text-primary mt-4">
+                  {plan.originalPrice && (
+                    <div className="text-xl text-gray-400 line-through mt-2">
+                      {plan.originalPrice} Kč
+                    </div>
+                  )}
+                  <div className={`text-4xl lg:text-5xl font-bold mt-2 ${plan.originalPrice ? 'text-accent' : 'text-primary'}`}>
                     {plan.price}
                     <span className="text-xl text-gray-500"> Kč</span>
                   </div>
+                  {plan.originalPrice && (
+                    <div className="text-sm text-accent font-semibold mt-2">
+                      Mimořádná zaváděcí cena!
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-4 mb-8">
@@ -208,20 +218,9 @@ const pricing = [
     ],
   },
   {
-    duration: '45',
-    price: '1000',
-    popular: false,
-    ideal: 'Ideální pro:',
-    features: [
-      'Komplexní terapie',
-      'Kombinace více technik',
-      'Cvičební program',
-      'Edukace a instruktáž',
-    ],
-  },
-  {
     duration: '60',
-    price: '1300',
+    price: '1000',
+    originalPrice: '1300',
     popular: true,
     ideal: 'Ideální pro:',
     features: [
@@ -244,7 +243,7 @@ const faqs = [
   },
   {
     question: 'Jak dlouho trvá jedna terapie?',
-    answer: 'Nabízím terapie v délce 30, 45 nebo 60 minut. První návštěva bývá delší (60 minut) kvůli podrobnému vyšetření. Další terapie přizpůsobím vašim potřebám.',
+    answer: 'Nabízím terapie v délce 30 nebo 60 minut. První návštěva bývá delší (60 minut) kvůli podrobnému vyšetření. Další terapie přizpůsobím vašim potřebám.',
   },
   {
     question: 'Hradí terapii pojišťovna?',
