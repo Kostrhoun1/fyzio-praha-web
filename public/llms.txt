@@ -1,0 +1,60 @@
+# Fyzio Praha - Bc. Veronika Jansová
+
+> Fyzioterapie na míru v Praze 8 - Libeň
+
+## O webu
+
+Toto je oficiální web fyzioterapeutky Bc. Veroniky Jansové. Web poskytuje informace o fyzioterapeutických službách v Praze 8.
+
+## Základní informace
+
+- Název: Fyzio Praha
+- Provozovatel: Bc. Veronika Jansová
+- Obor: Fyzioterapie, rehabilitace
+- Lokalita: Praha 8 - Libeň
+- Adresa: Andrštova 1339/4, 180 00 Praha 8
+
+## Kontakt
+
+- Telefon: +420 604 477 935
+- Email: info@fyzio-praha.cz
+- Web: https://www.fyzio-praha.cz
+
+## Služby
+
+- Individuální fyzioterapie
+- Dětská fyzioterapie (od 6 let)
+- Bolesti zad a kloubů
+- Bolesti hlavy a vertigo
+- Rehabilitace po operacích
+- Hluboký stabilizační systém
+- Podologie (funkční stélky Formthotics)
+- Tejpování
+- Měkké techniky a masáže
+
+## Ceník
+
+- 30 minut: 750 Kč
+- 60 minut: 1000 Kč (zaváděcí cena)
+
+## Provozní doba
+
+- Pondělí: 12:00 - 20:00
+- Úterý: 9:00 - 17:00
+- Středa: 9:00 - 17:00
+- Čtvrtek: 12:00 - 20:00
+- Pátek: 9:00 - 17:00
+- Sobota: 9:00 - 12:00
+- Neděle: Zavřeno
+
+## Stránky webu
+
+- / - Hlavní stránka
+- /o-mne - O fyzioterapeutce
+- /sluzby - Přehled služeb
+- /cenik - Ceník služeb
+- /kontakt - Kontaktní informace
+- /rezervace - Online rezervace
+- /caste-otazky - Často kladené otázky
+- /ochrana-udaju - Ochrana osobních údajů
+- /cookies - Informace o cookies
