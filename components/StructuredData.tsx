@@ -29,7 +29,7 @@ export default function StructuredData() {
       }
     ],
     "priceRange": "750 Kč - 1000 Kč",
-    "medicalSpecialty": "Physiotherapy",
+    "description": "Fyzioterapie na míru v Praze 8. Specializace: bolesti zad, rehabilitace, dětská fyzioterapie, vertigo, podologie.",
     "sameAs": []
   };
 
