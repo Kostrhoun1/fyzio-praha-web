@@ -255,7 +255,7 @@ const services = [
   },
   {
     icon: '❤️',
-    title: 'Rehabilitace kardiků a onkologických pacientů',
+    title: 'Rehabilitace kardiaků a onkologických pacientů',
     image: '/images/services/kardio-onko-rehabilitace.jpg',
     description: 'Šetrná a bezpečná rehabilitace přizpůsobená specifickým potřebám pacientů po kardiologických nebo onkologických diagnózách.',
     includes: [
