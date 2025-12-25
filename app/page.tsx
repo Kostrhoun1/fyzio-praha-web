@@ -407,7 +407,7 @@ export default function HomePage() {
                   <p className="text-white/90 text-sm">
                     Po, Čt: 12:00 - 20:00<br />
                     Út, St, Pá: 9:00 - 17:00<br />
-                    So: 9:00 - 12:00
+                    So, Ne: Zavřeno
                   </p>
                 </div>
               </div>

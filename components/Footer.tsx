@@ -114,11 +114,7 @@ export default function Footer() {
                 <span className="font-medium text-white">9:00 - 17:00</span>
               </div>
               <div className="flex justify-between">
-                <span>So:</span>
-                <span className="font-medium text-accent">9:00 - 12:00</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Ne:</span>
+                <span>So - Ne:</span>
                 <span className="text-gray-600">Zavřeno</span>
               </div>
             </div>

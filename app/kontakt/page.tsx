@@ -138,11 +138,7 @@ export default function ContactPage() {
                           <span className="font-semibold text-gray-900">9:00 - 17:00</span>
                         </div>
                         <div className="flex justify-between items-center">
-                          <span className="text-gray-600">So:</span>
-                          <span className="font-semibold text-accent">9:00 - 12:00</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Ne:</span>
+                          <span className="text-gray-600">So - Ne:</span>
                           <span className="text-gray-400">Zavřeno</span>
                         </div>
                       </div>
