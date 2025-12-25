@@ -47,7 +47,7 @@ export default function TestimonialsCarousel() {
 
     const interval = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
-    }, 6000); // Change every 6 seconds
+    }, 10000); // Change every 10 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, totalPages]);
