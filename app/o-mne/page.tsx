@@ -91,7 +91,7 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-lg mx-auto text-gray-600">
               <p className="text-xl leading-relaxed mb-6">
-                Fyzioterapii se věnuję <strong>více než 15 let</strong>. Za tu dobu jsem získala rozsáhlé
+                Fyzioterapii se věnuji <strong>více než 15 let</strong>. Za tu dobu jsem získala rozsáhlé
                 zkušenosti v ambulantní i lůžkové péči, včetně vedoucích pozic v renomovaných
                 rehabilitačních ambulancích.
               </p>
