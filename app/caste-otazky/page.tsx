@@ -279,20 +279,19 @@ const faqData = [
     `
   },
   {
-    question: "Ordinujete i o víkendu?",
+    question: "Jaká je provozní doba?",
     answer: `
-      <p class="mb-4">Ano, ordinuji v sobotu od 9:00 do 12:00.</p>
-      <p class="mb-2"><strong>📅 OTEVÍRACÍ HODINY:</strong></p>
+      <p class="mb-4">Ordinuji v pracovní dny, o víkendech je zavřeno.</p>
+      <p class="mb-2"><strong>📅 PROVOZNÍ DOBA:</strong></p>
       <div class="bg-gray-50 p-4 rounded-xl space-y-1">
-        <div>Pondělí: 12:00 - 20:00</div>
-        <div>Úterý: 9:00 - 17:00</div>
-        <div>Středa: 9:00 - 17:00</div>
-        <div>Čtvrtek: 12:00 - 20:00</div>
-        <div>Pátek: 9:00 - 17:00</div>
-        <div class="text-primary font-semibold">Sobota: 9:00 - 12:00 ✅</div>
-        <div class="text-gray-400">Neděle: Zavřeno ❌</div>
+        <div>Pondělí: 14:00 - 20:00</div>
+        <div>Úterý: 10:00 - 17:00</div>
+        <div>Středa: 10:00 - 17:00</div>
+        <div>Čtvrtek: 14:00 - 20:00</div>
+        <div>Pátek: 9:00 - 15:00</div>
+        <div class="text-gray-400">Sobota - Neděle: Zavřeno</div>
       </div>
-      <p class="mt-4"><strong>💡 TIP:</strong> Sobotní termíny jsou velmi rychle obsazené. Doporučuji objednat se předem:</p>
+      <p class="mt-4"><strong>💡 TIP:</strong> Doporučuji objednat se předem:</p>
       <ul class="list-disc pl-6 space-y-1 mt-2">
         <li>📞 <a href="tel:+420604477935" class="text-primary font-semibold hover:underline">604 477 935</a></li>
         <li>🌐 <a href="/rezervace" class="text-primary font-semibold hover:underline">www.fyzio-praha.cz/rezervace</a></li>

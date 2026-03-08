@@ -39,13 +39,12 @@ Toto je oficiální web fyzioterapeutky Bc. Veroniky Jansové. Web poskytuje inf
 
 ## Provozní doba
 
-- Pondělí: 12:00 - 20:00
-- Úterý: 9:00 - 17:00
-- Středa: 9:00 - 17:00
-- Čtvrtek: 12:00 - 20:00
-- Pátek: 9:00 - 17:00
-- Sobota: 9:00 - 12:00
-- Neděle: Zavřeno
+- Pondělí: 14:00 - 20:00
+- Úterý: 10:00 - 17:00
+- Středa: 10:00 - 17:00
+- Čtvrtek: 14:00 - 20:00
+- Pátek: 9:00 - 15:00
+- Sobota - Neděle: Zavřeno
 
 ## Stránky webu
 

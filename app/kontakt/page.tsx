@@ -63,7 +63,7 @@ export default function ContactPage() {
                       <a href="tel:+420604477935" className="text-primary hover:text-primary-light text-lg font-semibold transition-colors">
                         604 477 935
                       </a>
-                      <div className="text-sm text-gray-500 mt-1">Po-So: 9:00 - 20:00</div>
+                      <div className="text-sm text-gray-500 mt-1">Po-Pá: 9:00 - 20:00</div>
                     </div>
                   </div>
 
@@ -119,23 +119,23 @@ export default function ContactPage() {
                       <div className="space-y-1 text-sm">
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Po:</span>
-                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
+                          <span className="font-semibold text-gray-900">14:00 - 20:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Út:</span>
-                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                          <span className="font-semibold text-gray-900">10:00 - 17:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">St:</span>
-                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                          <span className="font-semibold text-gray-900">10:00 - 17:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Čt:</span>
-                          <span className="font-semibold text-gray-900">12:00 - 20:00</span>
+                          <span className="font-semibold text-gray-900">14:00 - 20:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">Pá:</span>
-                          <span className="font-semibold text-gray-900">9:00 - 17:00</span>
+                          <span className="font-semibold text-gray-900">9:00 - 15:00</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-gray-600">So - Ne:</span>

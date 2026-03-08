@@ -55,6 +55,10 @@ export default function ReservationPage() {
                   </p>
                 </div>
                 <ReservantoWidget />
+                <p className="text-sm text-gray-500 mt-4">
+                  Termín je nutné rezervovat alespoň <strong>24 hodin předem</strong>.
+                  V případě akutních potíží volejte tel. <a href="tel:+420604477935" className="text-primary hover:underline font-medium">604 477 935</a>.
+                </p>
               </div>
             </div>
           </div>

@@ -204,13 +204,13 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto items-stretch">
             {pricing.map((plan, index) => (
               <div
                 key={index}
-                className={`relative bg-white rounded-3xl p-8 lg:p-10 transition-all duration-300 ${
+                className={`relative bg-white rounded-3xl p-8 lg:p-10 transition-all duration-300 flex flex-col ${
                   plan.popular
-                    ? 'border-4 border-accent shadow-2xl transform scale-105'
+                    ? 'border-4 border-accent shadow-2xl md:scale-105'
                     : 'border-2 border-gray-200 hover:shadow-xl'
                 }`}
               >
@@ -243,7 +243,7 @@ export default function HomePage() {
                   )}
                 </div>
 
-                <div className="space-y-4 mb-8">
+                <div className="space-y-4 mb-6">
                   <h3 className="font-bold text-gray-900 text-lg mb-4">Ideální pro:</h3>
                   <ul className="space-y-3">
                     {plan.features.map((feature, idx) => (
@@ -267,16 +267,29 @@ export default function HomePage() {
                   </ul>
                 </div>
 
-                <Link
+                {/* Spacer + Bottom Section */}
+                <div className="mt-auto">
+                  {/* Gift Voucher Info */}
+                  <div className="border-2 border-dashed border-accent/40 rounded-xl p-4 mb-6 text-center bg-gradient-to-r from-accent/5 to-transparent">
+                    <div className="text-sm text-gray-700 mb-1">
+                      Lze objednat i jako <strong className="text-accent">dárkovou poukázku</strong>
+                    </div>
+                    <a href="mailto:info@fyzio-praha.cz" className="text-xs text-gray-500 hover:text-primary transition-colors">
+                      info@fyzio-praha.cz
+                    </a>
+                  </div>
+
+                  <Link
                   href="/rezervace"
                   className={`block text-center px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
                     plan.popular
                       ? 'bg-accent hover:bg-accent/90 text-white shadow-lg hover:shadow-xl'
                       : 'bg-gray-100 hover:bg-gray-200 text-gray-900'
                   }`}
-                >
-                  Rezervovat
-                </Link>
+                  >
+                    Rezervovat
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
@@ -405,9 +418,12 @@ export default function HomePage() {
                     <span className="font-semibold">Provozní doba</span>
                   </div>
                   <p className="text-white/90 text-sm">
-                    Po, Čt: 12:00 - 20:00<br />
-                    Út, St, Pá: 9:00 - 17:00<br />
-                    So, Ne: Zavřeno
+                    Po: 14:00 - 20:00<br />
+                    Út: 10:00 - 17:00<br />
+                    St: 10:00 - 17:00<br />
+                    Čt: 14:00 - 20:00<br />
+                    Pá: 9:00 - 15:00<br />
+                    So - Ne: Zavřeno
                   </p>
                 </div>
               </div>
