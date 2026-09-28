@@ -386,7 +386,7 @@ export default function HomePage() {
               {/* Google Map */}
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.945!2d14.4568!3d50.1056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94bb54c3e1c5%3A0x8e8e8e8e8e8e8e8e!2sAndr%C5%A1tova%201339%2F4%2C%20180%2000%20Praha%208-Libe%C5%88!5e0!3m2!1scs!2scz!4v1234567890123!5m2!1scs!2scz"
+                  src="https://maps.google.com/maps?q=Andr%C5%A1tova%201339%2F4%2C%20180%2000%20Praha%208&z=16&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

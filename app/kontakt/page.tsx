@@ -192,7 +192,7 @@ export default function ContactPage() {
               </h2>
               <div className="bg-gray-100 rounded-3xl overflow-hidden shadow-xl h-[600px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8!2d14.4844!3d50.1098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b945c1f8be5c1%3A0x8e8c8b9e4c8c8c8c!2sAndrstova%201339%2F4%2C%20180%2000%20Praha%208-Liben!5e0!3m2!1scs!2scz!4v1234567890"
+                  src="https://maps.google.com/maps?q=Andr%C5%A1tova%201339%2F4%2C%20180%2000%20Praha%208&z=16&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

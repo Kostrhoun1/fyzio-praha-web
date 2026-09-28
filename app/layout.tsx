@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fyzio-praha.cz'),
   title: "Fyzio Praha - Bc. Veronika Jansová | Fyzioterapie na míru",
-  description: "Fyzioterapie Praha 8 - Libeň ✓ Bolesti zad a páteře, rehabilitace po úrazech, bolesti kloubů ✓ Individuální péče 45-60 min ✓ 7 min od Palmovky ☎ 604 477 935",
+  description: "Fyzioterapie Praha 8 - Libeň ✓ Bolesti zad a páteře, rehabilitace po úrazech, bolesti kloubů ✓ Individuální péče 30-90 min ✓ 7 min od Palmovky ☎ 604 477 935",
   keywords: "fyzioterapie Praha, rehabilitace Praha, fyzioterapeut, dětská fyzioterapie, bolesti zad, vertebrogenní obtíže, Praha 8 Libeň",
   authors: [{ name: "Bc. Veronika Jansová" }],
   icons: {

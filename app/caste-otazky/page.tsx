@@ -151,7 +151,7 @@ const faqData = [
       <p class="mb-2"><strong>💡 VÝHODA PRIVÁTNÍ PÉČE:</strong></p>
       <ul class="list-disc pl-6 space-y-2">
         <li>Termíny do 3-7 dnů (ne měsíce čekání)</li>
-        <li>45-60 minut individuální péče (ne 10 min)</li>
+        <li>30-90 minut individuální péče (ne 10 min)</li>
         <li>Moderní terapeutické metody</li>
         <li>Osobní přístup bez časového tlaku</li>
       </ul>

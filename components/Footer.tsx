@@ -54,6 +54,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rezervace" className="text-gray-400 hover:text-accent transition-colors">
+                  Rezervace
+                </Link>
+              </li>
+              <li>
+                <Link href="/caste-otazky" className="text-gray-400 hover:text-accent transition-colors">
+                  Časté otázky
+                </Link>
+              </li>
+              <li>
                 <Link href="/kontakt" className="text-gray-400 hover:text-accent transition-colors">
                   Kontakt
                 </Link>

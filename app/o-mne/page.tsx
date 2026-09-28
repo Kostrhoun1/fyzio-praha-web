@@ -52,7 +52,7 @@ export default function AboutPage() {
 
               <div className="prose prose-lg text-gray-600">
                 <p>
-                  Jsem <strong>časově flexibilní, registrovaný fyzioterapeut</strong> s několikaletou
+                  Jsem <strong>časově flexibilní, registrovaný fyzioterapeut</strong> s dlouholetou
                   praxí v oboru ve složce ambulantní i lůžkové. Mým cílem je poskytovat{' '}
                   <strong>individuální, cílený a odborný přístup</strong> každému pacientovi.
                 </p>
@@ -242,10 +242,10 @@ export default function AboutPage() {
                 Zavolat: 604 477 935
               </a>
               <Link
-                href="/kontakt"
+                href="/rezervace"
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-xl"
               >
-                Kontaktní formulář
+                Online rezervace
               </Link>
             </div>
           </div>

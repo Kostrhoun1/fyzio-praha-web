@@ -1,6 +1,6 @@
 ---
 title: Do ordinace jsme pořídili infračervenou lampu
-date: 2026-09-28
+date: 2026-09-28T12:00:00
 excerpt: Péči v ordinaci jsme rozšířili o infračervenou lampu. Příjemné hloubkové teplo uvolní svaly a připraví tělo na terapii.
 image: /images/infracervena-lampa.jpg
 ---

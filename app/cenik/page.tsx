@@ -188,10 +188,10 @@ export default function PricingPage() {
                 Zavolat: 604 477 935
               </a>
               <Link
-                href="/kontakt"
+                href="/rezervace"
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-xl"
               >
-                Kontaktní formulář
+                Online rezervace
               </Link>
             </div>
           </div>
@@ -247,7 +247,7 @@ const pricing = [
 const faqs = [
   {
     question: 'Jak si mohu rezervovat termín?',
-    answer: 'Termín si můžete domluvit telefonicky na čísle 604 477 935 nebo přes kontaktní formulář na webu. Snažím se vyjít vstříc vašim časovým možnostem.',
+    answer: 'Termín si můžete domluvit online přes rezervační systém na webu nebo telefonicky na čísle 604 477 935. Snažím se vyjít vstříc vašim časovým možnostem.',
   },
   {
     question: 'Je potřeba nějaké doporučení od lékaře?',

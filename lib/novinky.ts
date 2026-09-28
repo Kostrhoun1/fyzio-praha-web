@@ -8,7 +8,7 @@ const NEWS_DIR = path.join(process.cwd(), 'content/novinky');
 export type NewsPost = {
   slug: string;
   title: string;
-  date: string; // YYYY-MM-DD
+  date: string; // YYYY-MM-DD, volitelně s časem YYYY-MM-DDTHH:MM (pro pořadí článků ve stejný den)
   excerpt: string;
   image?: string;
   html: string;
@@ -42,7 +42,7 @@ export function getNewsBySlug(slug: string): NewsPost | undefined {
 }
 
 export function formatDate(date: string): string {
-  return new Date(`${date}T12:00:00`).toLocaleDateString('cs-CZ', {
+  return new Date(`${date.slice(0, 10)}T12:00:00`).toLocaleDateString('cs-CZ', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -50,7 +50,10 @@ export function formatDate(date: string): string {
 }
 
 function normalizeDate(value: unknown): string {
-  // gray-matter převádí YYYY-MM-DD na Date objekt
-  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  // gray-matter převádí YYYY-MM-DD (i s časem) na Date objekt v UTC
+  if (value instanceof Date) {
+    const iso = value.toISOString();
+    return iso.endsWith('T00:00:00.000Z') ? iso.slice(0, 10) : iso.slice(0, 16);
+  }
   return String(value);
 }

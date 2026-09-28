@@ -3,7 +3,7 @@ import ReservantoWidget from '@/components/ReservantoWidget';
 
 export const metadata: Metadata = {
   title: 'Online rezervace - Fyzio Praha',
-  description: 'Online rezervace fyzioterapie Praha 8 ✓ Volné termíny do 3-7 dnů ✓ Akutní stavy do 24-48h ✓ U metra Palmovka ✓ Nebo volejte: 604 477 935 (Po-So)',
+  description: 'Online rezervace fyzioterapie Praha 8 ✓ Volné termíny do 3-7 dnů ✓ Akutní stavy do 24-48h ✓ U metra Palmovka ✓ Nebo volejte: 604 477 935 (Po-Pá)',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/rezervace',
   },

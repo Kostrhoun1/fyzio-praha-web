@@ -17,8 +17,8 @@ export default function StructuredData() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 50.1098,
-      "longitude": 14.4844
+      "latitude": 50.1076,
+      "longitude": 14.4743
     },
     "openingHoursSpecification": [
       {
@@ -54,7 +54,9 @@ export default function StructuredData() {
     ],
     "priceRange": "750 Kč - 1500 Kč",
     "description": "Fyzioterapie na míru v Praze 8. Specializace: bolesti zad, rehabilitace, dětská fyzioterapie, vertigo, podologie.",
-    "sameAs": []
+    "sameAs": [
+      "https://www.firmy.cz/detail/12937682-fyzio-praha-bc-veronika-jansova-praha-liben.html"
+    ]
   };
 
   return (
