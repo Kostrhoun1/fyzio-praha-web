@@ -24,8 +24,8 @@ export default function StructuredData() {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Monday",
-        "opens": "14:00",
-        "closes": "20:00"
+        "opens": "12:30",
+        "closes": "18:30"
       },
       {
         "@type": "OpeningHoursSpecification",
@@ -36,8 +36,8 @@ export default function StructuredData() {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Wednesday",
-        "opens": "10:00",
-        "closes": "17:00"
+        "opens": "08:00",
+        "closes": "15:00"
       },
       {
         "@type": "OpeningHoursSpecification",
@@ -48,11 +48,11 @@ export default function StructuredData() {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Friday",
-        "opens": "09:00",
-        "closes": "15:00"
+        "opens": "08:00",
+        "closes": "13:00"
       }
     ],
-    "priceRange": "750 Kč - 1000 Kč",
+    "priceRange": "750 Kč - 1500 Kč",
     "description": "Fyzioterapie na míru v Praze 8. Specializace: bolesti zad, rehabilitace, dětská fyzioterapie, vertigo, podologie.",
     "sameAs": []
   };

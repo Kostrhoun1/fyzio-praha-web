@@ -49,6 +49,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/novinky" className="text-gray-400 hover:text-accent transition-colors">
+                  Novinky
+                </Link>
+              </li>
+              <li>
                 <Link href="/kontakt" className="text-gray-400 hover:text-accent transition-colors">
                   Kontakt
                 </Link>
@@ -95,7 +100,7 @@ export default function Footer() {
             <div className="text-gray-400 text-sm space-y-1">
               <div className="flex justify-between">
                 <span>Po:</span>
-                <span className="font-medium text-white">14:00 - 20:00</span>
+                <span className="font-medium text-white">12:30 - 18:30</span>
               </div>
               <div className="flex justify-between">
                 <span>Út:</span>
@@ -103,7 +108,7 @@ export default function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>St:</span>
-                <span className="font-medium text-white">10:00 - 17:00</span>
+                <span className="font-medium text-white">8:00 - 15:00</span>
               </div>
               <div className="flex justify-between">
                 <span>Čt:</span>
@@ -111,7 +116,7 @@ export default function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>Pá:</span>
-                <span className="font-medium text-white">9:00 - 15:00</span>
+                <span className="font-medium text-white">8:00 - 13:00</span>
               </div>
               <div className="flex justify-between">
                 <span>So - Ne:</span>

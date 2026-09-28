@@ -35,15 +35,16 @@ Toto je oficiální web fyzioterapeutky Bc. Veroniky Jansové. Web poskytuje inf
 ## Ceník
 
 - 30 minut: 750 Kč
-- 60 minut: 1000 Kč (zaváděcí cena)
+- 60 minut: 1000 Kč (běžně 1300 Kč) – komplexní terapie nebo první návštěva s vyšetřením
+- 90 minut: 1500 Kč (běžně 2250 Kč) – rozšířená komplexní terapie, lymfodrenáž končetin, baňky, tejpování, infračervené světlo
 
 ## Provozní doba
 
-- Pondělí: 14:00 - 20:00
+- Pondělí: 12:30 - 18:30
 - Úterý: 10:00 - 17:00
-- Středa: 10:00 - 17:00
+- Středa: 8:00 - 15:00
 - Čtvrtek: 14:00 - 20:00
-- Pátek: 9:00 - 15:00
+- Pátek: 8:00 - 13:00
 - Sobota - Neděle: Zavřeno
 
 ## Stránky webu
@@ -54,6 +55,7 @@ Toto je oficiální web fyzioterapeutky Bc. Veroniky Jansové. Web poskytuje inf
 - /cenik - Ceník služeb
 - /kontakt - Kontaktní informace
 - /rezervace - Online rezervace
+- /novinky - Novinky a aktuality z ordinace
 - /caste-otazky - Často kladené otázky
 - /ochrana-udaju - Ochrana osobních údajů
 - /cookies - Informace o cookies

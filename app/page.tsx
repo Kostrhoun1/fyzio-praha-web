@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
+import NewsCard from '@/components/NewsCard';
+import { getAllNews } from '@/lib/novinky';
 
 export default function HomePage() {
+  const latestNews = getAllNews().slice(0, 3);
+
   return (
     <>
       {/* Hero Section */}
@@ -204,20 +208,20 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto items-stretch">
+          <div className="grid lg:grid-cols-3 gap-8 max-w-xl lg:max-w-6xl mx-auto items-stretch">
             {pricing.map((plan, index) => (
               <div
                 key={index}
                 className={`relative bg-white rounded-3xl p-8 lg:p-10 transition-all duration-300 flex flex-col ${
                   plan.popular
-                    ? 'border-4 border-accent shadow-2xl md:scale-105'
+                    ? 'border-4 border-accent shadow-2xl lg:scale-105'
                     : 'border-2 border-gray-200 hover:shadow-xl'
                 }`}
               >
-                {plan.popular && (
+                {plan.badge && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-accent text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg">
-                      🎉 Zaváděcí cena
+                    <div className={`${plan.popular ? 'bg-accent' : 'bg-primary'} text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg whitespace-nowrap`}>
+                      {plan.badge}
                     </div>
                   </div>
                 )}
@@ -236,11 +240,6 @@ export default function HomePage() {
                     {plan.price}
                     <span className="text-xl text-gray-500"> Kč</span>
                   </div>
-                  {plan.originalPrice && (
-                    <div className="text-sm text-accent font-semibold mt-2">
-                      Mimořádná zaváděcí cena!
-                    </div>
-                  )}
                 </div>
 
                 <div className="space-y-4 mb-6">
@@ -295,10 +294,42 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-8 text-gray-600">
-            <p>Platba: hotově, kartou nebo QR kódem</p>
+            <p>Platba: hotově nebo QR kódem</p>
           </div>
         </div>
       </section>
+
+      {/* Latest News */}
+      {latestNews.length > 0 && (
+        <section className="py-16 lg:py-24 bg-gray-50">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Novinky z ordinace
+              </h2>
+              <p className="text-lg text-gray-600">
+                Co je u nás nového
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+              {latestNews.map((post) => (
+                <NewsCard key={post.slug} post={post} />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Link
+                href="/novinky"
+                className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg"
+              >
+                <span>Všechny novinky</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Testimonials Section */}
       <TestimonialsCarousel />
@@ -418,11 +449,11 @@ export default function HomePage() {
                     <span className="font-semibold">Provozní doba</span>
                   </div>
                   <p className="text-white/90 text-sm">
-                    Po: 14:00 - 20:00<br />
+                    Po: 12:30 - 18:30<br />
                     Út: 10:00 - 17:00<br />
-                    St: 10:00 - 17:00<br />
+                    St: 8:00 - 15:00<br />
                     Čt: 14:00 - 20:00<br />
-                    Pá: 9:00 - 15:00<br />
+                    Pá: 8:00 - 13:00<br />
                     So - Ne: Zavřeno
                   </p>
                 </div>
@@ -505,9 +536,21 @@ const pricing = [
     originalPrice: '1300',
     popular: true,
     features: [
-      'První návštěva',
-      'Podrobné vyšetření',
+      'Komplexní terapie',
+      'První návštěva s vyšetřením',
       'Individuální plán',
+    ],
+  },
+  {
+    duration: '90',
+    price: '1500',
+    originalPrice: '2250',
+    popular: false,
+    badge: '✨ Rozšířená terapie',
+    features: [
+      'Rozšířená komplexní terapie',
+      'Lymfodrenáž horních i dolních končetin',
+      'Baňky, tejpování, infračervené světlo',
     ],
   },
 ];

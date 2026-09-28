@@ -22,6 +22,7 @@ export default function Navigation() {
     { href: '/o-mne', label: 'O mně' },
     { href: '/sluzby', label: 'Služby' },
     { href: '/cenik', label: 'Ceník' },
+    { href: '/novinky', label: 'Novinky' },
     { href: '/caste-otazky', label: 'Časté otázky' },
     { href: '/rezervace', label: 'Rezervace' },
     { href: '/kontakt', label: 'Kontakt' },
@@ -39,7 +40,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-24 lg:h-28">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-48 h-20 lg:w-72 lg:h-28 transition-transform group-hover:scale-105">
+            <div className="relative w-48 h-20 lg:w-52 lg:h-24 xl:w-72 xl:h-28 transition-transform group-hover:scale-105">
               <Image
                 src="/images/logo-transparent.png"
                 alt="Fyzio Praha Logo"
@@ -51,12 +52,12 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8 text-[15px] xl:text-base">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary font-medium transition-colors relative group"
+                className="text-gray-700 hover:text-primary font-medium transition-colors relative group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
@@ -66,7 +67,7 @@ export default function Navigation() {
             {/* CTA Button */}
             <Link
               href="/rezervace"
-              className="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="bg-accent hover:bg-accent/90 text-white px-5 xl:px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 whitespace-nowrap"
             >
               Rezervovat
             </Link>
@@ -106,7 +107,7 @@ export default function Navigation() {
         {/* Mobile Menu */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            isMobileMenuOpen ? 'max-h-96 pb-6' : 'max-h-0'
+            isMobileMenuOpen ? 'max-h-[40rem] pb-6' : 'max-h-0'
           }`}
         >
           <div className="flex flex-col space-y-4 pt-4 border-t border-gray-200">

@@ -117,19 +117,23 @@ const faqData = [
   {
     question: "Kolik stojí jedna návštěva u fyzioterapeuta?",
     answer: `
-      <p class="mb-4">Nabízím dvě délky terapie podle vašich potřeb:</p>
+      <p class="mb-4">Nabízím tři délky terapie podle vašich potřeb:</p>
       <div class="space-y-4">
         <div class="bg-gray-50 p-4 rounded-xl">
           <div class="font-bold text-gray-900 mb-1">⏱️ 30 minut = 750 Kč</div>
           <div class="text-gray-600">Ideální pro: kontrolní vyšetření, tejpování, cílená terapie</div>
         </div>
         <div class="bg-accent/10 p-4 rounded-xl border-2 border-accent">
-          <div class="font-bold text-gray-900 mb-1">⏱️ 60 minut = <span class="line-through text-gray-400">1300 Kč</span> <span class="text-accent">1000 Kč</span> 🎉 ZAVÁDĚCÍ CENA</div>
-          <div class="text-gray-600">Ideální pro: kompletní vyšetření + terapie, nové obtíže</div>
+          <div class="font-bold text-gray-900 mb-1">⏱️ 60 minut = <span class="line-through text-gray-400">1300 Kč</span> <span class="text-accent">1000 Kč</span></div>
+          <div class="text-gray-600">Ideální pro: komplexní terapii i první návštěvu s podrobným vyšetřením</div>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-xl">
+          <div class="font-bold text-gray-900 mb-1">⏱️ 90 minut = <span class="line-through text-gray-400">2250 Kč</span> <span class="text-accent">1500 Kč</span></div>
+          <div class="text-gray-600">Ideální pro: rozšířenou komplexní terapii, manuální lymfodrenáž horních i dolních končetin, kombinaci s baňkami, tejpováním či infračerveným světlem</div>
         </div>
       </div>
       <p class="mt-4">Ceny zahrnují kompletní vyšetření, hands-on terapii a edukaci (domácí cviky).</p>
-      <p class="mt-2">💳 Přijímám platbu kartou i hotovost.</p>
+      <p class="mt-2">💰 Přijímám platbu v hotovosti nebo QR kódem.</p>
     `
   },
   {
@@ -284,11 +288,11 @@ const faqData = [
       <p class="mb-4">Ordinuji v pracovní dny, o víkendech je zavřeno.</p>
       <p class="mb-2"><strong>📅 PROVOZNÍ DOBA:</strong></p>
       <div class="bg-gray-50 p-4 rounded-xl space-y-1">
-        <div>Pondělí: 14:00 - 20:00</div>
+        <div>Pondělí: 12:30 - 18:30</div>
         <div>Úterý: 10:00 - 17:00</div>
-        <div>Středa: 10:00 - 17:00</div>
+        <div>Středa: 8:00 - 15:00</div>
         <div>Čtvrtek: 14:00 - 20:00</div>
-        <div>Pátek: 9:00 - 15:00</div>
+        <div>Pátek: 8:00 - 13:00</div>
         <div class="text-gray-400">Sobota - Neděle: Zavřeno</div>
       </div>
       <p class="mt-4"><strong>💡 TIP:</strong> Doporučuji objednat se předem:</p>

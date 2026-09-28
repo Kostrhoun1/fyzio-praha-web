@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ceník - Ceny fyzioterapie | Fyzio Praha',
-  description: 'Ceník fyzioterapie Praha 8 ✓ 30 min: 750 Kč, 60 min: 1000 Kč (zaváděcí cena!) ✓ Kompletní vyšetření + terapie + edukace ✓ Platba kartou i hotově ☎ 604 477 935',
+  description: 'Ceník fyzioterapie Praha 8 ✓ 30 min: 750 Kč, 60 min: 1000 Kč, 90 min: 1500 Kč ✓ Kompletní vyšetření + terapie + edukace ✓ Platba hotově nebo QR kódem ☎ 604 477 935',
   alternates: {
     canonical: 'https://www.fyzio-praha.cz/cenik',
   },
@@ -29,20 +29,20 @@ export default function PricingPage() {
       {/* Pricing Cards */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto items-stretch">
+          <div className="grid lg:grid-cols-3 gap-8 max-w-xl lg:max-w-6xl mx-auto items-stretch">
             {pricing.map((plan, index) => (
               <div
                 key={index}
                 className={`relative bg-white rounded-3xl p-8 lg:p-10 transition-all duration-300 flex flex-col ${
                   plan.popular
-                    ? 'border-4 border-accent shadow-2xl md:scale-105'
+                    ? 'border-4 border-accent shadow-2xl lg:scale-105'
                     : 'border-2 border-gray-200 hover:shadow-xl'
                 }`}
               >
-                {plan.popular && (
+                {plan.badge && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-accent text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg">
-                      🎉 Zaváděcí cena
+                    <div className={`${plan.popular ? 'bg-accent' : 'bg-primary'} text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg whitespace-nowrap`}>
+                      {plan.badge}
                     </div>
                   </div>
                 )}
@@ -61,11 +61,6 @@ export default function PricingPage() {
                     {plan.price}
                     <span className="text-xl text-gray-500"> Kč</span>
                   </div>
-                  {plan.originalPrice && (
-                    <div className="text-sm text-accent font-semibold mt-2">
-                      Mimořádná zaváděcí cena!
-                    </div>
-                  )}
                 </div>
 
                 <div className="space-y-4 mb-6">
@@ -104,8 +99,8 @@ export default function PricingPage() {
                     </a>
                   </div>
 
-                  <a
-                    href="tel:+420604477935"
+                  <Link
+                    href="/rezervace"
                     className={`block text-center px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
                       plan.popular
                         ? 'bg-accent hover:bg-accent/90 text-white shadow-lg hover:shadow-xl'
@@ -113,7 +108,7 @@ export default function PricingPage() {
                     }`}
                   >
                     Rezervovat termín
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -125,7 +120,7 @@ export default function PricingPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 Platební možnosti
               </h2>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="grid md:grid-cols-2 gap-6 text-center max-w-2xl mx-auto">
                 <div className="space-y-2">
                   <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
                     <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,16 +129,6 @@ export default function PricingPage() {
                   </div>
                   <div className="font-semibold text-gray-900">Hotově</div>
                   <div className="text-sm text-gray-600">Platba na místě v hotovosti</div>
-                </div>
-
-                <div className="space-y-2">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
-                    <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                    </svg>
-                  </div>
-                  <div className="font-semibold text-gray-900">Kartou</div>
-                  <div className="text-sm text-gray-600">Platba platební kartou</div>
                 </div>
 
                 <div className="space-y-2">
@@ -237,10 +222,24 @@ const pricing = [
     popular: true,
     ideal: 'Ideální pro:',
     features: [
-      'První návštěva',
-      'Podrobné vyšetření',
-      'Individuální terapeutický plán',
-      'Komplexní péče',
+      'První návštěva s podrobným vyšetřením',
+      'Komplexní terapie (měkké a mobilizační techniky, cílené cvičení)',
+      'Pravidelné terapie v průběhu léčby',
+      'Individuální terapeutický plán a domácí cviky',
+    ],
+  },
+  {
+    duration: '90',
+    price: '1500',
+    originalPrice: '2250',
+    popular: false,
+    badge: '✨ Rozšířená terapie',
+    ideal: 'Ideální pro:',
+    features: [
+      'Rozšířená komplexní terapie – ošetření více oblastí najednou',
+      'Manuální lymfodrenáž horních i dolních končetin',
+      'Kombinace s doplňkovými metodami: baňky, tejpování, infračervené světlo',
+      'Více času na nácvik a edukaci domácích cviků',
     ],
   },
 ];
@@ -256,7 +255,7 @@ const faqs = [
   },
   {
     question: 'Jak dlouho trvá jedna terapie?',
-    answer: 'Nabízím terapie v délce 30 nebo 60 minut. První návštěva bývá delší (60 minut) kvůli podrobnému vyšetření. Další terapie přizpůsobím vašim potřebám.',
+    answer: 'Nabízím terapie v délce 30, 60 nebo 90 minut. První návštěva bývá delší (60 minut) kvůli podrobnému vyšetření. Další terapie přizpůsobím vašim potřebám.',
   },
   {
     question: 'Hradí terapii pojišťovna?',

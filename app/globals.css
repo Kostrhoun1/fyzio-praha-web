@@ -20,3 +20,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Obsah článků v Novinkách (generovaný z Markdownu) */
+.news-content {
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.news-content > * + * { margin-top: 1.25rem; }
+.news-content h2 { color: #111827; font-size: 1.75rem; font-weight: 700; line-height: 1.3; margin-top: 2.5rem; }
+.news-content h3 { color: #111827; font-size: 1.35rem; font-weight: 700; margin-top: 2rem; }
+.news-content strong { color: #1f2937; font-weight: 600; }
+.news-content a { color: #004D7A; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.news-content a:hover { color: #6BA8D0; }
+.news-content ul, .news-content ol { padding-left: 1.5rem; }
+.news-content ul { list-style: disc; }
+.news-content ol { list-style: decimal; }
+.news-content li + li { margin-top: 0.5rem; }
+.news-content li::marker { color: #8BC53F; }
+.news-content blockquote { border-left: 4px solid #8BC53F; padding-left: 1.25rem; font-style: italic; }
+.news-content img { border-radius: 1rem; max-width: 100%; }

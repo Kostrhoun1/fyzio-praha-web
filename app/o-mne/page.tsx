@@ -125,61 +125,96 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Postgraduate Education Section - HLAVNÍ VIZUÁLNÍ PRVEK */}
+      {/* Specializace - zaměření praxe */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-primary to-primary-light text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 lg:mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                Specializace a certifikace
+                Moje specializace
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Neustále se vzdělávám a rozšiřuji své dovednosti, abych vám mohla nabídnout
-                tu nejlepší péči založenou na aktuálních poznatcích fyzioterapie
+                Oblasti, kterým se dlouhodobě věnuji a ve kterých se neustále vzdělávám
               </p>
             </div>
 
-            {/* Kategorie kurzů */}
-            <div className="space-y-12">
-              {courseCategories.map((category, idx) => (
-                <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-12">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-3xl">
-                      {category.icon}
-                    </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold">{category.title}</h3>
+            <div className="flex flex-wrap justify-center gap-6">
+              {courseCategories.filter((category) => category.focus).map((category) => (
+                <div
+                  key={category.title}
+                  className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 hover:bg-white/15 transition-colors"
+                >
+                  <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                    {category.icon}
                   </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {category.courses.map((course, index) => (
-                      <div
-                        key={index}
-                        className="bg-white/20 backdrop-blur-sm p-6 rounded-xl hover:bg-white/30 transition-all duration-300 group"
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className="w-3 h-3 bg-accent rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
-                          <p className="text-white/95 leading-relaxed group-hover:text-white transition-colors">
-                            {course}
-                          </p>
-                        </div>
-                      </div>
+                  <h3 className="text-2xl font-bold mb-3">{category.title}</h3>
+                  <ul className="space-y-2">
+                    {category.focus?.map((item) => (
+                      <li key={item} className="flex items-start space-x-3 text-white/90">
+                        <span className="w-2 h-2 bg-accent rounded-full mt-2.5 flex-shrink-0"></span>
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
                     ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Absolvované kurzy a semináře */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Absolvované kurzy a semináře
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Postgraduální vzdělávání – {totalCourses} kurzů, seminářů a konferencí
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+              {courseCategories.map((category) => (
+                <div key={category.title} className="bg-white rounded-2xl border border-gray-200 p-6 lg:p-8">
+                  <div className="flex items-center space-x-3 pb-4 mb-2 border-b-2 border-accent/30">
+                    <span className="text-2xl">{category.icon}</span>
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-primary">
+                      {category.title}
+                    </h3>
                   </div>
+                  <ul className="divide-y divide-gray-100">
+                    {category.courses.map((course) => (
+                      <li key={course.name} className="flex items-start space-x-3 py-3">
+                        <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                          <p className="text-gray-800 leading-snug">{course.name}</p>
+                          {course.detail && (
+                            <p className="text-sm text-gray-500 mt-0.5">{course.detail}</p>
+                          )}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
 
-            {/* Vzdělání - kompaktní */}
-            <div className="mt-16 bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-12">
-              <h3 className="text-2xl lg:text-3xl font-bold mb-8 text-center">Základní vzdělání</h3>
+            {/* Základní vzdělání */}
+            <div className="mt-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">Základní vzdělání</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {education.map((edu, index) => (
-                  <div key={index} className="bg-white/20 backdrop-blur-sm p-6 rounded-xl">
+                  <div key={index} className="bg-white rounded-2xl border-l-4 border-primary p-6 shadow-sm">
                     <div className="text-accent font-bold mb-2">{edu.period}</div>
-                    <div className="text-xl font-bold mb-2">{edu.degree}</div>
-                    <div className="text-white/90">{edu.school}</div>
+                    <div className="text-xl font-bold text-gray-900 mb-2">{edu.degree}</div>
+                    <div className="text-gray-600">{edu.school}</div>
                     {edu.note && (
-                      <div className="text-sm text-white/70 mt-2">{edu.note}</div>
+                      <div className="text-sm text-gray-500 mt-2">{edu.note}</div>
                     )}
                   </div>
                 ))}
@@ -236,61 +271,71 @@ const education = [
   },
 ];
 
-const courseCategories = [
+type Course = { name: string; detail?: string };
+
+// focus = popis specializace; kategorie bez focus (konference) se v Moje specializace nezobrazí
+const courseCategories: { icon: string; title: string; focus?: string[]; courses: Course[] }[] = [
   {
     icon: '🦶',
     title: 'Podologie a noha',
+    focus: ['Diagnostika a terapie chodidel u dětí i dospělých', 'Ploché nohy', 'Individuální stélky Formthotics'],
     courses: [
-      'Dětská noha - podologie a fyzioterapie, sportovní obuv',
-      'Funkční diagnostika nohy a aktivní kinezioterapie',
-      'Formthotics systém - individuální stélky',
+      { name: 'Seminář Formthotics systém s workshopem', detail: 'MUDr. Karel Mašek' },
+      { name: 'Funkční diagnostika nohy, její aktivní kinezioterapie a individuální korekce', detail: 'Fyzio P' },
+      { name: 'Dětská noha – podologie a fyzioterapie, sportovní obuv', detail: 'Fyzio P' },
     ],
   },
   {
     icon: '🧠',
     title: 'Neurologické a psychosomatické přístupy',
+    focus: ['Závratě (vertigo)', 'Neurologické diagnózy', 'Souvislosti mezi tělem a psychikou'],
     courses: [
-      'Současné trendy ve fyzioterapii neurologicky nemocných',
-      'Diagnostika a terapie závratí (Vertigo)',
-      'Základy komplexního psychosomatického přístupu',
+      { name: 'Workshop Současné trendy ve fyzioterapii neurologicky nemocných', detail: 'PhDr. Kamila Řasová, Ph.D.' },
+      { name: 'Diagnostika a terapie závratí', detail: 'CKP' },
+      { name: 'Základy komplexního psychosomatického přístupu XI. – Spiritualita a láska v psychosomatice', detail: 'CKP' },
     ],
   },
   {
     icon: '🏋️',
     title: 'Terapeutické koncepty a cvičení',
+    focus: ['Koncept BPP (Bazální podprogramy)', 'Spiral stabilization', 'Aktivace hlubokého stabilizačního systému páteře'],
     courses: [
-      'Terapeutický koncept BPP (Bazální podprogramy)',
-      'Spiral stabilization 1A + 1B',
-      'Kurz Forma - Funkce - Facilitace',
-      'Aktivace hlubokého stabilizačního systému páteře',
-      'Cvičení na míči, labilních plochách a s overbally',
+      { name: 'Terapeutický koncept BPP (Bazální podprogramy)' },
+      { name: 'Spiral stabilization 1A + 1B', detail: 'SMSystem' },
+      { name: 'Forma – Funkce – Facilitace' },
+      { name: 'Diagnostické a terapeutické postupy využívané při stabilizaci páteře (HSS)' },
+      { name: 'Cvičení na míči, labilních plochách a s overbally', detail: 'NZZ-Rehaspring' },
     ],
   },
   {
     icon: '👐',
     title: 'Manuální techniky',
+    focus: ['Měkké a mobilizační techniky', 'Manuální lymfodrenáž', 'Kineziologické tejpování'],
     courses: [
-      'Měkké a mobilizační techniky (Rehex-Edu)',
-      'Terapie funkčních poruch ramenního kloubu dle BPP',
-      'Manuální lymfodrenáž těla v regeneraci',
-      'Terapeutické využití kineziologických tejpů',
+      { name: 'Měkké a mobilizační techniky', detail: 'REHEX-EDU' },
+      { name: 'Možnosti terapie funkčních poruch ramenního kloubu dle konceptu BPP' },
+      { name: 'Manuální lymfodrenáž těla v regeneraci' },
+      { name: 'Terapeutické využití kineziologických tejpů' },
     ],
   },
   {
     icon: '⚡',
     title: 'Specializované metody',
+    focus: ['Rázová vlna', 'Redcord', 'Další moderní postupy v rehabilitaci'],
     courses: [
-      'Využití rázové vlny v rehabilitaci a ortopedii',
-      'Redcord – Fyzioterapie v souvislosti',
-      'Certifikát celoživotního vzdělávání UNIFY',
+      { name: 'Využití rázové vlny v rehabilitaci a ortopedii' },
+      { name: 'Redcord – Fyzioterapie v souvislosti', detail: 'pasivní účast' },
+      { name: 'Certifikát celoživotního vzdělávání UNIFY' },
     ],
   },
   {
     icon: '📚',
-    title: 'Konference a další vzdělávání',
+    title: 'Konference',
     courses: [
-      'Ústecké rehabilitační konference (pasivní účast)',
-      'Rehabilitační konference Krajské zdravotní a.s. (aktivní účast)',
+      { name: 'Ústecké rehabilitační konference', detail: 'pasivní účast' },
+      { name: 'Rehabilitační konference Krajské zdravotní a.s. – nemocnice Teplice', detail: 'aktivní účast' },
     ],
   },
 ];
+
+const totalCourses = courseCategories.reduce((sum, category) => sum + category.courses.length, 0);
